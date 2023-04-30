@@ -12,8 +12,10 @@ The is a one-person final project consists of the following components to predic
 - information retrieved from [**DuckDuckGo**](https://serpapi.com/duckduckgo-news-results)  
 - async server is built upon [**Rust tokio**](https://docs.rs/tokio/latest/tokio/)
 
+*Check [design.md](docs/design.md) for more details on the overall design struction of this project.*
+
 ## Demo
-You can access my project directly through [this link](http://3.90.27.105:8080/).
+You can access my project directly through [this link](http://3.90.27.105:8080/). I also recorded a [demo video](https://youtu.be/dyO6GexqHq8) posted on Youtube.
 
 First, we input keyword "Apple" and get the following news and their sentiments.
 
@@ -65,16 +67,20 @@ This will take one terminal. To run in the background, use `nohup` or `screen`.
 ```bash
 cargo run 
 ```
-
-This will start an async rust server on port 8080.
+This will start an async rust server on port 8080. In the first run, the model will be downloaded and cached in the `~/.cache/huggingface/transformers` folder. *This will take a while depending on your network speed*.
 
 3. Access the website by going to `localhost:8080`. Ready to use!
 
 ## Load Testing
-Load testing is the process of evaluating a system's performance under high load conditions. It is essential to ensure that a system can handle the expected load and traffic without slowing down or crashing. I use [WebPageTest](https://www.webpagetest.org/) to conduct the load testing.
+Load testing is the process of evaluating a system's performance under high load conditions. It is essential to ensure that a system can handle the expected load and traffic without slowing down or crashing. I use [WebPageTest](https://www.webpagetest.org/) to conduct the load testing. The overall perfermance is not bad:
+- This site was quick to connect and deliver initial code. It began rendering content very quickly. There were 1 render-blocking requests. The largest content rendered quickly.
+- This site had good layout stability. It took little time to become interactive. It had 2 accessibility issues, none serious. HTML content was mostly generated server-side.
+- This site had no render-blocking 3rd party requests that could be a single point of failure. It had no security issues. HTML content was mostly generated server-side.
 
-## Notes
-In the first run, the model will be downloaded and cached in the `~/.cache/huggingface/transformers` folder. *This will take a while depending on your network speed*.
+![Load Testing1](https://github.com/Mushroom-Wang/news-sentiment-analysis/blob/77f22b63c53ce749c4c617c156740e70d139b83d/Load%20Testing1.png)
 
-*Check [design.md](docs/design.md) for more details on the overall design struction of this project.*
+Below are the performance metrics:
+
+![Load Testing2](https://github.com/Mushroom-Wang/news-sentiment-analysis/blob/77f22b63c53ce749c4c617c156740e70d139b83d/Load%20Testing2.png)
+
 ## Reference
