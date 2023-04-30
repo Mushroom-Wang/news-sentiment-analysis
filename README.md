@@ -7,21 +7,23 @@ Are you curious about the public sentiment surrounding a specific topic? For ins
 
 This repository contains a project that performs sentiment analysis on latest news using Rust and Python as MLOps microservices.
 ## Overview
-The project consists of the following components to predict the public sentiment of given keywords:
+The is a one-person final project consists of the following components to predict the public sentiment of given keywords:
 - a pre-trained [**RoBERTa**](https://huggingface.co/docs/transformers/model_doc/roberta) model 
 - information retrieved from [**DuckDuckGo**](https://serpapi.com/duckduckgo-news-results)  
 - async server is built upon [**Rust tokio**](https://docs.rs/tokio/latest/tokio/)
 
 ## Demo
-First, we input keyword "Apple"
+You can access my project directly through [this link](http://3.90.27.105:8080/).
+
+First, we input keyword "Apple" and get the following news and their sentiments.
 
 ![Apple](https://github.com/Mushroom-Wang/news-sentiment-analysis/blob/edde10a57ccb9420876e597d44463ca71d26749b/Apple.png)
 
-Try another keyword "Meta"
+Try another keyword "Meta":
 
 ![Meta](https://github.com/Mushroom-Wang/news-sentiment-analysis/blob/edde10a57ccb9420876e597d44463ca71d26749b/Meta.png)
 
-We can also perform sentiment analysis on a specific person, for example "Elon Mask"
+We can also perform sentiment analysis on a specific person, for example "Elon Mask".
 
 ![Elon Mask](https://github.com/Mushroom-Wang/news-sentiment-analysis/blob/edde10a57ccb9420876e597d44463ca71d26749b/Elon%20Mask.png)
 
@@ -42,9 +44,10 @@ source venv/bin/activate
 cd sentiment_analysis/
 pip install -e .
 ```
+
 ## Usage
 ### Run on AWS
-You can access my project directly through [this link](http://3.90.27.105:8080/)
+I deployed the project to AWS EC2 so that public can access my project directly through [this link](http://3.90.27.105:8080/).
 ![AWS](https://github.com/Mushroom-Wang/news-sentiment-analysis/blob/edde10a57ccb9420876e597d44463ca71d26749b/AWS.png)
 
 ### Run Locally
@@ -65,9 +68,10 @@ cargo run
 
 This will start an async rust server on port 8080.
 
-3. Access the website by going to `localhost:8080`. Ready to go!
+3. Access the website by going to `localhost:8080`. Ready to use!
 
-## Load Test
+## Load Testing
+Load testing is the process of evaluating a system's performance under high load conditions. It is essential to ensure that a system can handle the expected load and traffic without slowing down or crashing. I use [WebPageTest](https://www.webpagetest.org/) to conduct the load testing.
 
 ## Notes
 In the first run, the model will be downloaded and cached in the `~/.cache/huggingface/transformers` folder. *This will take a while depending on your network speed*.
