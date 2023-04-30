@@ -72,7 +72,7 @@ This will start an async rust server on port 8080. In the first run, the model w
 3. Access the website by going to `localhost:8080`. Ready to use!
 
 ## Load Testing
-Load testing is the process of evaluating a system's performance under high load conditions. It is essential to ensure that a system can handle the expected load and traffic without slowing down or crashing. I use [WebPageTest](https://www.webpagetest.org/) to conduct the load testing. The overall perfermance is not bad:
+Load testing is the process of evaluating a system's performance under high load conditions. It is essential to ensure that a system can handle the expected load and traffic without slowing down or crashing. I use [WebPageTest](https://www.webpagetest.org/) to conduct the load testing. Check out these web performance test results on [WebPageTest.org](https://www.webpagetest.org/result/230430_BiDcY6_67W/). The overall perfermance is not bad:
 - This site was quick to connect and deliver initial code. It began rendering content very quickly. There were 1 render-blocking requests. The largest content rendered quickly.
 - This site had good layout stability. It took little time to become interactive. It had 2 accessibility issues, none serious. HTML content was mostly generated server-side.
 - This site had no render-blocking 3rd party requests that could be a single point of failure. It had no security issues. HTML content was mostly generated server-side.
