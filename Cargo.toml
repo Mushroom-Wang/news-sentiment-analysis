@@ -1,0 +1,14 @@
+[package]
+name = "sentiment_of_keyword"
+version = "0.0.1"
+authors = ["Quan Wang <quan.wang@cs.duke.edu>"]
+edition = "2021"
+
+[dependencies]
+pyo3 = { version = "0.14", features = ["auto-initialize"] }
+hyper = { version = "0.14", features = ["full"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+reqwest = { version = "0.11", features = ["blocking"] }
+serde_json = "1.0"
+lazy_static = "1.4.0"
