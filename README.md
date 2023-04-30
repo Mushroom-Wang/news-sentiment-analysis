@@ -1,4 +1,4 @@
-LOGO HERE
+![logo](https://github.com/Mushroom-Wang/news-sentiment-analysis/blob/1417c5138afef6d1cc7b5086ab008774a8f35f20/logo)
 
 Do you want to know public sentiment about a particular topic? For example,
 - what is the public sentiment about the latest news on the US election;
