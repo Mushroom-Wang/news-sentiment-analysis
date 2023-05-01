@@ -11,7 +11,9 @@ The is a one-person final project consists of the following components to predic
 - a pre-trained [**RoBERTa**](https://huggingface.co/docs/transformers/model_doc/roberta) model 
 - information retrieved from [**DuckDuckGo**](https://serpapi.com/duckduckgo-news-results)  
 - async server is built upon [**Rust tokio**](https://docs.rs/tokio/latest/tokio/)
+
 ![Project Structure](https://github.com/Mushroom-Wang/news-sentiment-analysis/blob/09c4f63f1a750e04e82b980e0579e0f0359cbd1e/images/Project%20Structure)
+
 *Check [design.md](docs/design.md) for more details on the overall design struction of this project.*
 
 ## Demo
