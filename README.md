@@ -17,7 +17,7 @@ The is a one-person final project consists of the following components to predic
 *Check [design.md](docs/design.md) for more details on the overall design struction of this project.*
 
 ## Demo
-You can access my project directly through [this link](http://3.90.27.105:8080/). I also recorded a [demo video]() posted on Youtube.
+You can access my project directly through [this link](http://3.90.27.105:8080/). I also recorded a [demo video](https://youtu.be/945NYRPe-eY) posted on Youtube.
 
 First, we input keyword "Apple" and get the following news and their sentiments.
 
